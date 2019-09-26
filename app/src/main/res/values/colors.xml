@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2627F5</color>
+    <color name="colorPrimaryDark">#F7D2D2</color>
+    <color name="colorAccent">#311301</color>
+    <color name="blacks">#000000</color>
+    <color name="whiles">#FFFFFF</color>
+    <color name="blue">#1000FF</color>
+    <color name="yeallow">#FFF300</color>
+    <color name="red">#FF0000</color>
+    <color name="pinks">#FF00D5</color>
+    <color name="background">#464EEB</color>
+    <color name="green">#58FF00</color>
+    <color name="whilegreen">#79FF00C0</color>
+
+</resources>

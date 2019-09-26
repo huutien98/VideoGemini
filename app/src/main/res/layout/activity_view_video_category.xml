@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/video_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/videoSurfaceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.videoapppro.ControlVideo.ResizeSurfaceView
+            android:id="@+id/videoSurface"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/loading"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            />
+
+    </FrameLayout>
+<RelativeLayout
+    android:layout_below="@+id/videoSurfaceContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/rv_videocategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="3"
+            android:background="@color/blue"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="3"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_weight="2"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</RelativeLayout>
+
+
+
+</RelativeLayout>

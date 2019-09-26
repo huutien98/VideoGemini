@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/account"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    tools:context=".AccountFragment">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:id="@+id/imageaccount"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/iconnavigation"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"/>
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_marginLeft="@dimen/_28sdp"
+        android:layout_below="@+id/imageaccount"
+        android:textSize="@dimen/_35sdp"
+        android:text="Nguyễn Hữu Tiến "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textschool"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_below="@+id/textname"
+        android:textSize="@dimen/_26sdp"
+        android:text="Học viện kỹ thuật mật mã"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+<LinearLayout
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_below="@+id/imageaccount"
+    android:id="@+id/itemaccount"
+    android:layout_marginTop="@dimen/_220sdp"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/facebook"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/facebook"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"/>
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/instagram"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/instagram"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"/>
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/github"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/github"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"/>
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/google"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/google"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"/>
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

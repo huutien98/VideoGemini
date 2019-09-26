@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:backgroundTint="@color/whiles"
+    android:layout_height="@dimen/_150sdp"
+    android:weightSum="2"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/whiles">
+
+        <ImageView
+            android:id="@+id/item_list_category"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_weight="1"
+            android:background="@color/blacks"
+            android:textColor="@color/yeallow"
+            android:gravity="center"
+            android:id="@+id/title_item_list_category"
+            android:textSize="@dimen/_15sdp"
+            android:hint="videohot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RatingBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:foregroundGravity="center"
+            android:numStars="5"
+            android:stepSize=".9" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

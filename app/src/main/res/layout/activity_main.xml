@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context=".MainActivity">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout
+                android:background="@color/whiles"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    app:layout_scrollFlags="enterAlways|exitUntilCollapsed|scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_230sdp"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:title="Play Now"
+                    app:expandedTitleMarginStart="@dimen/_10sdp"
+                    app:expandedTitleMarginEnd="@dimen/_50sdp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="bottom"
+                            android:padding="@dimen/_8sdp"
+                            app:centered="true"
+                            app:fillColor="#df0623"
+                            app:pageColor="#fff"
+                            app:snap="false" />
+                    </RelativeLayout>
+                    <androidx.appcompat.widget.Toolbar
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"/>
+
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+                <com.google.android.material.tabs.TabLayout
+                    android:background="@color/whiles"
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.tabs.TabItem
+                        android:background="@color/colorPrimaryDark"
+                        android:outlineSpotShadowColor="@color/blacks"
+                        android:outlineAmbientShadowColor="@color/background"
+                        android:text="Videohot"
+                        android:backgroundTint="@color/blue"
+                        android:id="@+id/tabvideohot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.google.android.material.tabs.TabItem
+                        android:background="@color/default_line_indicator_selected_color"
+                        android:text="VideoCategory"
+                        android:id="@+id/tabvideocategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.tabs.TabLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:id="@+id/fragment_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.viewpager.widget.ViewPager>
+            </LinearLayout>
+
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_gravity="start"
+    android:layout_width="@dimen/_180sdp"
+    android:layout_height="match_parent">
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:realtimeBlurRadius="6dp"
+        app:realtimeOverlayColor="#301B212F" >
+
+    </com.github.mmin18.widget.RealtimeBlurView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:fitsSystemWindows="true"
+        android:background="#00FFFFFF"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/whiles"
+        app:menu="@menu/menu_navigation"
+        app:headerLayout="@layout/header_naviagtion"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
